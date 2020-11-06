@@ -17,7 +17,7 @@ func init() {
 		Name:      "BusyLight UC",
 		Type:      &BusyLightUC,
 		VendorId:  0x27BB,
-		ProductId: 0x3BCB,
+		ProductId: 0x3BCD,
 		Open: func(d hid.Device) (Device, error) {
 			return newBusyLight(d, func(c color.Color) {
 				r, g, b, _ := c.RGBA()
